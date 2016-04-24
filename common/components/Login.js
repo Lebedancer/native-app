@@ -55,7 +55,6 @@ export default class ReactNativeLogin extends Component {
 
     render () {
         // If we have completed loading the cookie choose to show Login WebView or the LoggedIn component, else just show an empty View.
-
         if (this.state.loadedCookie) {
             if (this.state.loggedIn) {
                 return (
@@ -64,7 +63,6 @@ export default class ReactNativeLogin extends Component {
             }
             else {
                 return (
-
                     <Navigation></Navigation>
                 );
             }
