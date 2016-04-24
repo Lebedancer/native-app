@@ -2,7 +2,7 @@
 
 import React, {StyleSheet, View,Text, WebView, Component} from 'react-native';
 import CookieManager from 'react-native-cookies';
-import LoginForm from './LoginForm';
+import LoginForm from './LoginForm/LoginForm';
 import Navigation from './Navigation';
 
 // Change these to reflect

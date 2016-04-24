@@ -17,7 +17,8 @@ import LeadsDateHeader from './components/LeadsDateHeader'
 var styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#F5FCFF',
+        padding: 15,
+        backgroundColor: 'white'
     }
 });
 
@@ -32,8 +33,6 @@ export default class Leads extends Component {
             ])
         };
     }
-
-
 
     render () {
         return (

@@ -24,7 +24,8 @@ var styles = StyleSheet.create({
     },
     exit: {
         fontSize: 16,
-        paddingTop: 20,
+        marginTop: 40,
+        fontWeight: 'bold',
         color: 'white'
     }
 });

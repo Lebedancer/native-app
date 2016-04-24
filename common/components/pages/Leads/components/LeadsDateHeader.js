@@ -10,6 +10,7 @@ import React, {
     Component,
     DatePickerAndroid
 } from 'react-native';
+import Converter from '../../../../helpers/Converter'
 
 var styles = StyleSheet.create({
     container: {
@@ -21,8 +22,8 @@ export default class LeadsDateHeader extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            minDate: '21.01.2014',
-            maxDate: '21.01.2014'
+            minDate: new Date(),
+            maxDate: new Date()
         };
     }
 
@@ -50,18 +51,18 @@ export default class LeadsDateHeader extends Component {
                     <Text> c </Text>
                     <TouchableWithoutFeedback
                         onPress={this.showPicker.bind(this, 'min', {
-                      date: this.state.minDate,
+                        date: this.state.minDate,
                       minDate: new Date(),
                     })}>
-                        <Text>{this.state.minDate}</Text>
+                        <Text>{Converter.dateToString(this.state.minDate)}</Text>
                     </TouchableWithoutFeedback>
                     <Text> по </Text>
                     <TouchableWithoutFeedback
                         onPress={this.showPicker.bind(this, 'max', {
-                      date: this.state.maxDate,
-                      minDate: new Date(),
+                        date: this.state.maxDate,
+                        minDate: new Date(),
                     })}>
-                        <Text>{this.state.maxDate}</Text>
+                        <Text>{Converter.dateToString(this.state.maxDate)}</Text>
                     </TouchableWithoutFeedback>
                 </Text>
             </View>
