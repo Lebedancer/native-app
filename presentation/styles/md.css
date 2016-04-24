@@ -1,0 +1,12 @@
+.slide:after {
+    content: '';
+    background: url('imgs/logo.jpeg');
+    width: 80px;
+    height: 80px;
+    background-size: 100%;
+    right: 20px;
+}
+.progress {
+    border-color: rgb(86, 170, 30);
+    border-right-color: transparent;
+}

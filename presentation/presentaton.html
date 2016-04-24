@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Front-end</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen-16x10.css">
+	<link rel="stylesheet" href="styles/md.css">
+	<link rel="stylesheet" href="styles/common.css">
+</head>
+<body class="shower list">
+<header class="caption">
+    <h1>Моё дело</h1>
+    <p>IT-инфраструктура и бизнес всегда растут вместе</p>
+</header>
+	<section class="slide cover">
+        <div class="promo promo--top">
+            <h1 style="font-size: 5em; bottom: -69%;">Инфраструктура</h1>
+        </div>
+        <div class="promo promo--bottom">
+            <h1 style="font-size: 5em; top: -26%;">Инфраструктура</h1>
+        </div>
+    </section>
+    <section class="slide slide--devopsMiddle">
+            <h2>Рождение "Мое Дело"</h2>
+            <h3>(MD 0.1.alpha)</h3>
+    </section>
+    <section class="slide">
+            <h2>Инфраструктура "Мое Дело"</h2>
+            <img style="left: 10%" class="devopsImg" src="imgs/devops/image1.png">
+
+    </section>
+     <section class="slide">
+            <h2>Основные "подходы" к разработке</h2>
+            <ul>
+                <li>Ручная сборка кода программистами</li>
+                <li>Ручной деплой в production</li>
+                <li>Скрипты по почте</li>
+                <li>Отсутствие возможности отката "версии"</li>
+                <li>Отсутствие должного тестирования</li>
+                <li>Ручное отключение сервиса на релиз (раз в неделю)</li>
+            </ul>
+    </section>
+   <section class="slide slide--devopsMiddle">
+            <h2>Мелкие шалости</h2>
+            <h3>(MD 0.2.alpha)</h3>
+    </section>
+    <section class="slide">
+            <h2>Инфраструктура "Мое Дело"</h2>
+            <img style="left: 10%" class="devopsImg" src="imgs/devops/image2.png">
+    </section>
+     <section class="slide">
+            <h2>Что мы имели на тот момент...</h2>
+            <ul>
+                <li>Терминирование SSL трафика на Nginx</li>
+                <li>Частичный перенос бизнес логики на Nginx</li>
+            </ul>
+
+             <h2 class="secondHeader">Не имели, но очень хотелось :)</h2>
+            <ul>
+                <li>Мониторинг</li>
+                <li>Логирование ошибок</li>
+            </ul>
+    </section>
+    <section class="slide slide--devopsMiddle">
+            <h3>Подходы к разработке сохранялись :)</h3>
+    </section>
+    <section class="slide slide--devopsMiddle">
+            <h2>Первые шаги в большом мире</h2>
+            <h3>(MD 1.0.RELEASE)</h3>
+    </section>
+    <section class="slide">
+            <h2>Инфраструктура "Мое Дело"</h2>
+              <img style="left: 20%;" class="devopsImg" src="imgs/devops/image3.png">
+    </section>
+     <section class="slide slide--darkSide  " style="background: #100F0F;
+    color: white;">
+            <h2 style="color: #981314;
+    text-shadow: 0 0 10px rgba(152, 19, 20, 0.83);">Темная сторона "Мое Дело"</h2>
+            <ul>
+                <li>Распределение нагрузки (IP hash)</li>
+                <li>Синхронизация контента между узлами</li>
+                <li>Обслуживание узлов "кластера"</li>
+                <li>Долгие релизы продолжались :(</li>
+            </ul>
+    </section>
+    <section class="slide slide--lightSide">
+            <h2 style="color: #295D79; text-shadow: 0 0 10px rgba(41, 93, 121, 0.38);">Светлая сторона "Мое Дело"</h2>
+            <ul>
+                <li>Выделение QA как отдельного направления разработки</li>
+                <li>Значительный рост команды</li>
+                <li>Каждой команде "по тестовому серверу"</li>
+                <li>Новый офис!!!</li>
+                <li>Ломались подходы к разработке :)</li>
+            </ul>
+    </section>
+    <section class="slide">
+            <h2>Новая игрушка (Teamcity)</h2>
+            <ul>
+                <li>Версионность сборок (pack)</li>
+                <li>Автоматизированная выкладка (deploy)</li>
+                <li>Автоматическое тестирование (unit тесты)</li>
+                <li>Обслуживание инфраструктуры (maintenance)</li>
+                <li>Централизованное хранилище nuget пакетов</li>
+                <li>Выключение сервиса "для чужих"</li>
+            </ul>
+    </section>
+    <section class="slide slide--devopsMiddle">
+            <h2>Работа над ошибками <br>
+            (первая двойка в четверти)</h2>
+            <h3>(MD 1.0.1.BUGFIX)</h3>
+    </section>
+<section class="slide slide--devopsMiddle">
+            <h3>Сколько времени потребуется  <br>
+
+на синхронизацию 1 000 000 файлов <br>
+
+между 2 серверами?</h3>
+    </section>
+<section class="slide slide--devopsMiddle">
+            <h3>Сколько времени потребуется<br>
+
+на синхронизацию 5 000 000 файлов<br>
+
+между 10 серверами?</h3>
+    </section>
+    <section class="slide">
+            <h2>Новая животинка "Мое Дело"</h2>
+             <img style="left: 26%;
+    height: 60%;" class="devopsImg" src="imgs/devops/image4.png">
+    <p class="devopsImgNote">Кто это? монгогрид или гридомонг?</p>
+    </section>
+    <section class="slide slide--devopsMiddle">
+            <h3>Давайте накормим нашего нашу животинку...</h3>
+            <h3>И что мы видим???</h3>
+    </section>
+    <section class="slide">
+            <h2 style="font-size: 45px;">Животинка вдруг выросла, да еще мутировала</h2>
+            <img style="left: 18%;
+    height: 60%;" class="devopsImg" src="imgs/devops/image5.png">
+    <p class="devopsImgNote">Вот теперь это точно породистый реплисетовый гридомонг.</p>
+    </section>
+<section class="slide slide--devopsMiddle">
+            <h2>Не ошибается лишь тот, <br>
+            кто ничего не делает</h2>
+            <h3>(MD 2.0.RELEASE)</h3>
+    </section>
+<section class="slide slide--devopsMiddle">
+            <h3>Мы снова переехали :)</h3>
+    </section>
+    <section class="slide">
+            <h2>Инфраструктура "Мое Дело"</h2>
+             <img class="devopsImg" src="imgs/devops/image6.png">
+    </section>
+    </section>
+    <section class="slide  slide--devopsMiddle">
+            <h2>Continious integration</h2>
+            <h3>Teamcity</h3>
+    </section>
+    <section class="slide">
+            <h2>Где мы используем Teamcity?</h2>
+            <ul>
+                <li>Прогон Unit тестов</li>
+                <li>Build, Pack, Deploy приложения</li>
+                <li>Прогон миграций</li>
+                <li>Небольшое обслуживание инфраструктуры (Recycle, Server maintenance)</li>
+                <li>Continious Inspection (SonarQube)</li>
+                <li>Сборка Nuget пакетов</li>
+                <li>Сборка npm пакетов</li>
+                <li>Прогон автоматизированных тестов (Selenium)</li>
+            </ul>
+    </section>
+    <section class="slide">
+            <h2>Разбираемся с возможностями Teamcity</h2>
+            <ul>
+                <li>MSBuild</li>
+                <li>Bash</li>
+                <li>Windows CMD</li>
+                <li>Powershell</li>
+                <li>Plugins (Artifact Deployer, Node.js build runner)</li>
+                <li>MetaRunner</li>
+                <li>Teamcity Rest API</li>
+            </ul>
+    </section>
+    <section class="slide  slide--devopsMiddle">
+            <h2>Hot (Re)Deploy</h2>
+            <h3>MD 3.0.RELEASE</h3>
+    </section>
+    <section class="slide">
+            <h2>Мы больше не увидим Андрюшу :(</h2>
+            <img style="left: 10%;" class="devopsImg" src="imgs/devops/image7.png">
+    </section>
+    <section class="slide">
+    </section>
+    <section class="slide cover">
+        <div class="promo promo--top">
+            <h1>Back-end</h1>
+        </div>
+        <div class="promo promo--bottom">
+            <h1>Back-end</h1>
+        </div>
+    </section>
+    <section class="slide">
+        <ul>
+            <li>CVSC</li>
+            <li>Сборка на локальных машинах</li>
+            <li>Прямое изменение структуры БД + mail-sharing</li>
+            <li>Нет системы логирования</li>
+            <li>Нет мониторинга</li>
+        </ul>
+        <img src="imgs/backend/happy.jpg" class="bgImage" style="left: 20%;width: 95%;top: -40%;">
+    </section>
+    <section class="slide">
+        <h2>VCS</h2>
+        <ul>
+            <li>SVN (1 repo)</li>
+        </ul>
+        <img src="imgs/backend/happy.jpg" class="bgImage" style="left: 20%;width: 95%;top: -40%;">
+    </section>
+    <section class="slide">
+        <h2>VCS</h2>
+        <ul>
+            <li>SVN (1 repo)</li>
+        </ul>
+        <img src="imgs/backend/panic.jpg" class="bgImage" style="left: 40%;width: 60%;">
+    </section>
+    <section class="slide">
+        <h2>VCS</h2>
+        <ul>
+            <li><del>SVN (1 repo)</del></li>
+            <li>TFS (1 repo)</li>
+        </ul>
+        <img src="imgs/backend/happy.jpg" class="bgImage" style="left: 20%;width: 95%;top: -40%;">
+    </section>
+    <section class="slide">
+        <h2>VCS</h2>
+        <ul>
+            <li><del>SVN (1 repo)</del></li>
+            <li>TFS (1 repo)</li>
+        </ul>
+        <img src="imgs/backend/panic.jpg" class="bgImage" style="left: 40%;width: 60%;">
+    </section>
+    <section class="slide">
+        <h2>VCS</h2>
+        <ul>
+            <li><del>SVN (1 repo)</del></li>
+            <li><del>TFS (1 repo)</del></li>
+            <li>TFS (10-12 repo)</li>
+        </ul>
+        <img src="imgs/backend/angry.jpg" class="bgImage" style="left: 33%;width: 61%;top: 8%;">
+    </section>
+    <section class="slide">
+        <h2>VCS</h2>
+        <ul>
+            <li><del>SVN (1 repo)</del></li>
+            <li><del>TFS (1 repo)</del></li>
+            <li><del>TFS (10-12 repo)</del></li>
+            <li>Git (10-12 repo)</li>
+        </ul>
+        <img src="imgs/backend/happy.jpg" class="bgImage" style="left: 20%;width: 95%;top: -40%;">
+    </section>
+    <section class="slide">
+        <h2>VCS</h2>
+        <ul>
+            <li><del>SVN (1 repo)</del></li>
+            <li><del>TFS (1 repo)</del></li>
+            <li><del>TFS (10-12 repo)</del></li>
+            <li><del>Git (10-12 repo)</del></li>
+            <li>Git (50+ repo)</li>
+        </ul>
+        <img src="imgs/backend/kind.jpg" class="bgImage" style="left: 29%;width: 64%;top: 23%;">
+    </section>
+    <section class="slide">
+        <h2>Repo</h2>
+        <ul>
+            <li>Функциональные репозитории (бизнес код, общая схема именования проектов и <i>sln</i>-файлов)</li>
+            <li>Нефункциональные репозитории (полезные скрипты, общие конфигурации <i>codestyle</i> и т.п.)</li>
+        </ul>
+    </section>
+    <section class="slide">
+        <h2>md-ci</h2>
+        <ul>
+            <li>Обновление локальных репозиториев</li>
+            <li>Сборка бекенда</li>
+            <li>Сборка фронтенда</li>
+            <li>Инициализация структуры БД</li>
+            <li>Обновление структуры БД</li>
+            <li>Маппинг приложений на сайты IIS</li>
+            <li>Запуск IIS</li>
+        </ul>
+    </section>
+    <section class="slide">
+        <img src="imgs/backend/6-andryusha.jpg" style="width: 80%; height: 34%; position: absolute; top: 34%;">
+    </section>
+    <section class="slide">
+        <img src="imgs/backend/12-andryusha.jpg" style="width: 79%; height: 68%; position: absolute; top: 20%;">
+    </section>
+    <section class="slide">
+        <img src="imgs/backend/24-andryusha.jpg" style="width: 71%; height: 93%; position: absolute; top: 2%;">
+    </section>
+    <section class="slide">
+        <img src="imgs/backend/48-andryusha.jpg" style="width: 71%;height: 93%;position: absolute;top: 2%;">
+    </section>
+    <section class="slide">
+        <h2>Continuous Integration</h2>
+        <img src="imgs/screens/backend/backend8_1.png" style="width: 74%; height: 13%; position: absolute; top: 47%;">
+    </section>
+    <section class="slide">
+        <h2>TeamCity <span style="font-size: 30%;">(http://www.jetbrains.com/teamcity)</span></h2>
+        <img src="imgs/screens/backend/backend2.jpg" style="width: 98%; height: 78%;">
+    </section>
+    <section class="slide">
+        <h2>Continuous Integration</h2>
+        <img src="imgs/backend/andryusha-car-cs.jpg" style="width: 19%; height: 22%; position: absolute; top: 32%; left: 12%; opacity: 0.9;">
+        <img src="imgs/screens/backend/backend8.png" style="width: 74%; height: 14%; position: absolute; top: 57%;">
+    </section>
+    <section class="slide">
+        <h2>Continuous Integration</h2>
+        <img src="imgs/backend/andryusha-car-cs-back.jpg" style="width: 19%; height: 22%; position: absolute; top: 32%; left: 12%; opacity: 0.9;">
+        <img src="imgs/backend/angry.jpg" style="width: 18%; height: 22%; position: absolute; top: 32%; left: 33%; opacity: 0.9;">
+        <img src="imgs/screens/backend/backend8-red.png" style="width: 74%; height: 14%; position: absolute; top: 57%;">
+    </section>
+    <section class="slide">
+        <h2>Continuous Integration</h2>
+        <img src="imgs/backend/andryusha-car-dll.jpg" style="width: 19%; height: 22%; position: absolute; top: 32%; left: 43%; opacity: 0.9;">
+        <img src="imgs/screens/backend/backend8-green.png" style="width: 74%; height: 14%; position: absolute; top: 57%;">
+    </section>
+    <section class="slide">
+        <h2>Continuous Integration</h2>
+        <img src="imgs/backend/andryusha-car-deploy.jpg" style="width: 19%;height: 22%;position: absolute;top: 32%;left: 69%;opacity: 0.9;">
+        <img src="imgs/screens/backend/backend8-green-pack.png" style="width: 74%; height: 14%; position: absolute; top: 57%;">
+    </section>
+    <section class="slide">
+        <h2>Microservices</h2>
+        <img src="imgs/screens/backend/backend10.png" style="width: 82%; height: 61%; position: absolute; top: 30%;">
+    </section>
+    <section class="slide">
+        <h2>Microservices</h2>
+        <img src="imgs/screens/backend/backend10-nuget.png" style="width: 83%;height: 61%;position: absolute;top: 30%;">
+    </section>
+    <section class="slide">
+        <h2>Database migrations</h2>
+        <ul>
+            <li>ручное редактирование БД иключено</li>
+            <li>обновление состояния БД на всех окружениях</li>
+            <li>единоразовое выполнение каждого изменения</li>
+            <li>строго предустановленный порядок изменений</li>
+            <li>получение изменений БД между версиями</li>
+            <li>откат БД на более раннюю версию</li>
+        </ul>
+        <img src="imgs/backend/3.jpg" class="bgImage" style="left: 37%;width: 64%;top: -7%;">
+    </section>
+    <section class="slide">
+        <h2>Database migrations</h2>
+        <div>Fluent Migrations</div>
+        <div>http://www.github.com/schambers/fluentmigrator</div>
+        <img src="imgs/kind-page-001.jpg" class="bgImage" style="left: 29%;width: 64%;top: 23%;">
+    </section>
+    <section class="slide">
+        <h2>Database migrations</h2>
+        <img src="imgs/screens/backend/backend5.jpg" style="width: 90%;height: 78%;">
+    </section>
+    <section class="slide">
+        <h2>Database migrations</h2>
+        <img src="imgs/screens/backend/backend6.jpg" style="width: 88%; height: 51%;">
+    </section>
+    <section class="slide">
+        <h2>Loggly <span style="font-size: 30%;">(http://www.loggly.com)</span></h2>
+        <img src="imgs/screens/backend/loggly.jpg" style="width: 98%; height: 78%;">
+    </section>
+    <section class="slide">
+        <h2>NewRelic <span style="font-size: 30%;">(http://www.newrelic.com)</span></h2>
+        <img src="imgs/screens/backend/newrelic.jpg" style="width: 98%; height: 78%;">
+    </section>
+    <section class="slide">
+    </section>
+    <section class="slide cover">
+		<div class="promo promo--top">
+			<h1>Front-end</h1>
+		</div>
+		<div class="promo promo--bottom">
+			<h1>Front-end</h1>
+		</div>
+	</section>
+	<section class="slide">
+		<img src="imgs/1.jpg" class="slideImg">
+	</section>
+	<section class="slide">
+		<h2>Новорожденный</h2>
+		<ul>
+			<li>Мало скриптов</li>
+			<li>Мало стилей</li>
+			<li>Js/css файлы лежат вместе с серверным кодом</li>
+			<li>Js/css подключаются напрямую в html</li>
+			<li>Нет ни ci, ни минификации, файлы загружатся по ftp</li>
+		</ul>
+		<img src="imgs/1.jpg" class="bgImage" style="height: 209%; 
+    right: -42%;
+    top: -10%;">
+	</section>
+	<section class="slide">
+		<img src="imgs/6.jpg" class="slideImg" style="left: 20%">
+	</section>
+	<section class="slide">
+		<h2>Мы идем в детский сад</h2>
+		<ul>
+			<li>Резкий рост количества файлов</li>
+			<li>Combres - для минификации и бандлов</li>
+			<li>Less вместо css</li>
+			<li>Js/css файлы все еще в серверном проекте</li>
+			<li>Подключение в html через api Combress</li>
+			<li>Появляется ci. Файлы пакуются и диплоются вместе с серверным кодом.</li>
+		</ul>
+		<img src="imgs/6.jpg" class="bgImage" style="height: 190%;
+    right: -65%;
+    top: -3%;">
+	</section>
+	<section class="slide">
+		<img src="imgs/2.jpg" class="slideImg" style="left: 18%">
+	</section>
+	<section class="slide">
+		<h2>Школьник</h2>
+		<ul>
+			<li>Нет Combres, Gulp - да</li>
+			<li>Backbone</li>
+			<li>Ядро статки(вендоры, общие стили, библиотеки и компоненты)</li>
+			<li>Клиентский код вынесен из серверного проекта в отдельное место</li>
+		</ul>
+		<img src="imgs/2.jpg" class="bgImage" style="height: 180%;
+    right: -38%;
+    top: 9%;">
+	</section>
+	<section class="slide slide--screens">
+		<img src="imgs/screens/mvc.png" style="width:50%; position: absolute; top: 5%; left: 25px">
+	</section>
+	<section class="slide slide--screens">
+		<img src="imgs/screens/mvc.png" class="blurSlideImg" style="width: 50%; position: absolute; top: 5%; left: 25px">
+		<img class="shout shrink" src="imgs/screens/bundles.png" style=" width: 48%; position: absolute; top: 305px; left: 50%;">
+	</section>
+	<section class="slide slide--screens">
+		<img src="imgs/screens/mvc.png" class="blurSlideImg" style="width: 50%; position: absolute; top: 5%; left: 25px">
+		<img src="imgs/screens/bundles.png" class="blurSlideImg" style="width: 48%; position: absolute; top: 13px; left: 50%;">
+		<img class="shout shrink" src="imgs/screens/layout.png" style=" width: 48%; position: absolute; top: 305px; left: 28%;">
+	</section>
+	<section class="slide">
+		<img src="imgs/3.jpg" class="slideImg" style="left: 18%">
+	</section>
+	<section class="slide">
+		<h2>Студент</h2>
+		<ul>
+			<li>Добавили версионность статики и ядра</li>
+			<li>Marionette.js</li>
+			<li>CDN</li>
+		</ul>
+		<img src="imgs/3.jpg" class="bgImage" style="height: 180%;
+    right: -38%;
+    top: 9%;">
+	</section>
+	<section class="slide">
+		<img src="imgs/4.jpg" class="slideImg" style="left: 16%">
+	</section>
+	<section class="slide">
+		<h2>Невеста</h2>
+		<ul>
+			<li>Для сборки нового кода используется Webpack</li>
+			<li>ESnext (ES6)</li>
+		</ul>
+		<img src="imgs/4.jpg" class="bgImage" style="height: 160%;
+    right: -46%;
+    top: 9%;">
+	</section>
+	<section class="slide">
+		<h2>Невеста</h2>
+		<ul>
+			<li>Для сборки нового кода используется Webpack</li>
+			<li>ESnext (ES6)</li>
+			<li>PostCss</li>
+		</ul>
+		<img src="imgs/4.jpg" class="bgImage" style="height: 160%;
+    right: -46%;
+    top: 9%;">
+	</section>
+	<section class="slide">
+		<h2>Невеста</h2>
+		<ul>
+			<li>Для сборки нового кода используется Webpack</li>
+			<li>ESnext (ES6)</li>
+			<li>PostCss</li>
+			<li>Компонентный подход</li>
+		</ul>
+		<img src="imgs/4.jpg" class="bgImage" style="height: 160%;
+    right: -46%;
+    top: 9%;">
+	</section>
+	<section class="slide">
+		<h2>Невеста</h2>
+		<ul>
+			<li>Для сборки нового кода используется Webpack</li>
+			<li>ESnext (ES6)</li>
+			<li>PostCss</li>
+			<li>Компонентный подход</li>
+			<li>MD-framework</li>
+		</ul>
+		<img src="imgs/4.jpg" class="bgImage" style="height: 160%;
+    right: -46%;
+    top: 9%;">
+	</section>
+	<section class="slide">
+		<h2>Невеста</h2>
+		<ul>
+			<li>Для сборки нового кода используется Webpack</li>
+			<li>ESnext (ES6)</li>
+			<li>PostCss</li>
+			<li>Компонентный подход</li>
+			<li>MD-framework</li>
+			<li>JSCS / Eslint</li>
+		</ul>
+		<img src="imgs/4.jpg" class="bgImage" style="height: 160%;
+    right: -46%;
+    top: 9%;">
+	</section>
+	<section class="slide">
+		<h2>Невеста</h2>
+		<ul>
+			<li>Для сборки нового кода используется Webpack</li>
+			<li>ESnext (ES6)</li>
+			<li>PostCss</li>
+			<li>Компонентный подход</li>
+			<li>MD-framework</li>
+			<li>JSCS / Eslint</li>
+			<li>Ядро 2.0</li>
+		</ul>
+		<img src="imgs/4.jpg" class="bgImage" style="height: 160%;
+    right: -46%;
+    top: 9%;">
+	</section>
+	<section class="slide">
+		<img src="imgs/5.jpg" class="slideImg" style="left: 11%">
+	</section>
+	<section class="slide">
+		<h2>Мы съезжаем</h2>
+		<ul>
+			<li>Отдельный репозиторий и отдельная сборка в TC (back-end и front-end независимые)</li>
+			<li>Скрипты для сборки gulp/webpack - npm пакеты</li>
+			<li>Ядро статики - npm пакет</li>
+			<li>Npm скрипты</li>
+		</ul>
+		<img src="imgs/5.jpg" class="bgImage" style="height: 140%;
+    right: -37%;
+    top: 23%;">
+	</section>
+	<section class="slide theEnd">
+		<span class="">npm start</span>
+	</section>
+	<section class="slide theEnd">
+		<span class="">Спасибо за внимание!</span>
+	</section>
+	<div class="progress"></div>
+	<script src="shower/shower.min.js"></script>
+</body>
+</html>
