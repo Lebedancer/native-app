@@ -1,7 +1,7 @@
 'use strict';
 
 import React, {StyleSheet, View,Text, TextInput, WebView, Component} from 'react-native';
-import CookieManager from 'react-native-cookies';
+import AppService from '../services/AppService';
 var Button = require('react-native-button');
 
 var styles = StyleSheet.create({
@@ -41,48 +41,46 @@ export default class LoginForm extends Component {
                 >
                     Press Me!
                 </Button>
+                <Button
+                    style={{fontSize: 20, color: 'green'}}
+                    styleDisabled={{color: 'red'}}
+                    onPress={this._LeadsPress.bind(this)}
+                >
+                    Press Me111!
+                </Button>
             </View>
         );
     }
 
-    logout() {
-        CookieManager.clearAll((err, res) => {
-            console.log(err);
-            console.log(res);
-        });
 
-        this.setState({
-            loggedIn: false,
-        });
+
+    _handlePress() {
+        const props = this.props;
+
+        AppService.login({
+            onLogin: ()=> {
+                props.onLogin()
+
+            }
+        })
     }
 
-    _handlePress(event) {
+    _LeadsPress(event) {
         this.logout.bind(this);
-        fetch('https://www.moedelo.org/Agents/Login', {
-            method: 'POST',
+        fetch('https://www.moedelo.org/Agents/Subaccount/GetReferralLinksByPartner', {
+            method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({
-                Email: 'sferryf@gmail.com',
-                Password: 'b29e864493515e3c83c7618b7528e323'
-            })
+            //body: JSON.stringify({
+            //    Email: 'sferryf@gmail.com',
+            //    Password: 'b29e864493515e3c83c7618b7528e323'
+            //})
         })
-            .then((response) => {
-                CookieManager.get('https://www.moedelo.org/', (cookie) => {
-                    let isAuthenticated;
-                    if (cookie && cookie.indexOf('md-auth') != -1) {
-                        isAuthenticated = true;
-                    }
-                    else {
-                        isAuthenticated = false;
-                    }
-
-                    this.setState({
-                        loggedIn: isAuthenticated,
-                        loadedCookie: true
-                    })
-                })
+            .then((response) => response.json())
+            .then((responseText) => {
+                debugger;
+                console.log(responseText);
             })
             .catch((error) => {
                 console.warn(error);

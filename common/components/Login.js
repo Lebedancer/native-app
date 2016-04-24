@@ -58,12 +58,12 @@ export default class ReactNativeLogin extends Component {
         if (this.state.loadedCookie) {
             if (this.state.loggedIn) {
                 return (
-                    <LoginForm></LoginForm>
+                    <Navigation></Navigation>
                 );
             }
             else {
                 return (
-                    <Navigation></Navigation>
+                    <LoginForm onLogin={this._onLogin.bind(this)}></LoginForm>
                 );
             }
         }
@@ -72,5 +72,12 @@ export default class ReactNativeLogin extends Component {
                 <View></View>
             );
         }
+    }
+
+    _onLogin() {
+        this.setState({
+            loggedIn: true,
+            loadedCookie: true
+        })
     }
 }

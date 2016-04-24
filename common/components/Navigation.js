@@ -8,6 +8,7 @@ import Faq from './pages/Faq';
 import PartnerNetwork from './pages/PartnerNetwork';
 import WebStatistic from './pages/WebStatistic';
 import Menu from './Menu';
+import Account from './Account';
 const SideMenu = require('react-native-side-menu');
 
 var styles = StyleSheet.create({
@@ -53,6 +54,7 @@ class Navigation extends React.Component{
 
         return (
             <SideMenu style={styles.container} menu={menu} navigator={navigator}>
+                <Account></Account>
                 {scene}
             </SideMenu>
         );
