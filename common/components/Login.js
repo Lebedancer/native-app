@@ -3,6 +3,7 @@
 import React, {StyleSheet, View,Text, WebView, Component} from 'react-native';
 import CookieManager from 'react-native-cookies';
 import LoginForm from './LoginForm';
+import Navigation from './Navigation';
 
 // Change these to reflect
 const LOGIN_URL = "https://www.moedelo.org/Agents/Login";
@@ -54,15 +55,17 @@ export default class ReactNativeLogin extends Component {
 
     render () {
         // If we have completed loading the cookie choose to show Login WebView or the LoggedIn component, else just show an empty View.
+
         if (this.state.loadedCookie) {
             if (this.state.loggedIn) {
                 return (
-                    <Text>Ты залогинен</Text>
+                    <LoginForm></LoginForm>
                 );
             }
             else {
                 return (
-                    <LoginForm></LoginForm>
+
+                    <Navigation></Navigation>
                 );
             }
         }
